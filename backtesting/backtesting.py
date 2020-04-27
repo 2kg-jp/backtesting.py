@@ -654,6 +654,51 @@ class Backtest:
         if 'Volume' not in data:
             data['Volume'] = np.nan
 
+        if 'Open2' not in data:
+            data['Open2'] = np.nan
+
+        if 'High2' not in data:
+            data['High2'] = np.nan
+
+        if 'Low2' not in data:
+            data['Low2'] = np.nan
+
+        if 'Close2' not in data:
+            data['Close2'] = np.nan
+
+        if 'Volume2' not in data:
+            data['Volume2'] = np.nan
+
+        if 'Open3' not in data:
+            data['Open3'] = np.nan
+
+        if 'High3' not in data:
+            data['High3'] = np.nan
+
+        if 'Low3' not in data:
+            data['Low3'] = np.nan
+
+        if 'Close3' not in data:
+            data['Close3'] = np.nan
+
+        if 'Volume3' not in data:
+            data['Volume3'] = np.nan
+
+        if 'Flg1' not in data:
+            data['Flg1'] = np.nan
+
+        if 'Flg2' not in data:
+            data['Flg2'] = np.nan
+
+        if 'Flg3' not in data:
+            data['Flg3'] = np.nan
+
+        if 'Flg4' not in data:
+            data['Flg4'] = np.nan
+
+        if 'Flg5' not in data:
+            data['Flg5'] = np.nan
+
         if len(data) == 0:
             raise ValueError('OHLC `data` is empty')
         if len(data.columns & {'Open', 'High', 'Low', 'Close', 'Volume'}) != 5:

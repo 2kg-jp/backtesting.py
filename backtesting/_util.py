@@ -18,7 +18,10 @@ def _as_str(value):
     if isinstance(value, pd.DataFrame):
         return 'df'
     name = str(getattr(value, 'name', '') or '')
-    if name in ('Open', 'High', 'Low', 'Close', 'Volume'):
+    if name in ('Open', 'High', 'Low', 'Close', 'Volume',
+                'Open2', 'High2', 'Low2', 'Close2', 'Volume2',
+                'Open3', 'High3', 'Low3', 'Close3', 'Volume3',
+                'Flg1', 'Flg2', 'Flg3', 'Flg4', 'Flg5'):
         return name[:1]
     if callable(value):
         name = value.__name__.replace('<lambda>', 'λ')
