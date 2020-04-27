@@ -1,7 +1,7 @@
 Backtesting.py (modified version)
 ==============
 
-[**original version**](https://kernc.github.io/backtesting.py/)
+Fork元のオリジナルはこちら→ [**original version**](https://kernc.github.io/backtesting.py/)
 
 * Backtesting.pyをもとに、いくつか分析用の項目を追加したものです。
 * original versionでの「Open」「High」「Low」「Close」「Volume」の5項目に以下の項目を追加しています。
@@ -21,7 +21,14 @@ Backtesting.py (modified version)
     * Flg4
     * Flg5
 
-Usage
+インストール方法
+-----
+```python
+$ pip install git@github.com:2kg-jp/backtesting.py.git
+```
+
+
+使い方
 -----
 ```python
 from backtesting import Backtest, Strategy
