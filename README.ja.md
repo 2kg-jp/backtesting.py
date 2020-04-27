@@ -24,7 +24,7 @@ Fork元のオリジナルはこちら→ [**original version**](https://kernc.gi
 インストール方法
 -----
 ```python
-$ pip install git@github.com:2kg-jp/backtesting.py.git
+$ pip install git+https://github.com/2kg-jp/backtesting.py
 ```
 
 
