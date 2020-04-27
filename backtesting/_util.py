@@ -146,6 +146,64 @@ class _Data:
     def Volume(self):
         return self.__get_array('Volume')
 
+    def Open2(self):
+        return self.__get_array('Open2')
+
+    @property
+    def High2(self):
+        return self.__get_array('High2')
+
+    @property
+    def Low2(self):
+        return self.__get_array('Low2')
+
+    @property
+    def Close2(self):
+        return self.__get_array('Close2')
+
+    @property
+    def Volume2(self):
+        return self.__get_array('Volume2')
+
+    def Open3(self):
+        return self.__get_array('Open3')
+
+    @property
+    def High3(self):
+        return self.__get_array('High3')
+
+    @property
+    def Low3(self):
+        return self.__get_array('Low3')
+
+    @property
+    def Close3(self):
+        return self.__get_array('Close3')
+
+    @property
+    def Volume3(self):
+        return self.__get_array('Volume3')
+
+    @property
+    def Flg1(self):
+        return self.__get_array('Flg1')
+
+    @property
+    def Flg2(self):
+        return self.__get_array('Flg2')
+
+    @property
+    def Flg3(self):
+        return self.__get_array('Flg3')
+
+    @property
+    def Flg4(self):
+        return self.__get_array('Flg4')
+
+    @property
+    def Flg5(self):
+        return self.__get_array('Flg5')
+
     @property
     def index(self):
         return self.__get_array('__index')
