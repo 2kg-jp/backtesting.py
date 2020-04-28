@@ -1085,3 +1085,21 @@ class Backtest:
             superimpose=superimpose,
             show_legend=show_legend,
             open_browser=open_browser)
+
+    def results_raw_data(self, *, results: pd.Series = None):
+        """
+        If `results` is provided, it should be a particular result
+        `pd.Series` such as returned by
+        `backtesting.backtesting.Backtest.run` or
+        `backtesting.backtesting.Backtest.optimize`, otherwise the last
+        run's results are used.
+        """
+
+        if results is None:
+            if self._results is None:
+                raise RuntimeError('First issue `backtest.run()` to obtain results.')
+            results = self._results
+
+        trade_data = results._trade_data.copy(False)
+
+        return trade_data
